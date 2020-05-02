@@ -1,0 +1,12 @@
+<%= render partial: 'users/sidebar', locals: {user:@user, new_book:@new_book} %>
+
+<h1>Book detail</h1>
+
+<table>
+	<tr>
+		<td><%= attachment_image_tag @user, :profile_image, :fill, 10, 10, format: 'jpeg', fallback: "no_image.jpg" %><br>
+			<%= @user.name %></td>
+		<td><%= @book.title %></td>
+		<td><%= @book.opinion %></td>
+	</tr>
+</table>
