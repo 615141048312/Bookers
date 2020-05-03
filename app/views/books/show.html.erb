@@ -4,7 +4,7 @@
 
 <table>
 	<tr>
-		<td><%= attachment_image_tag @user, :profile_image, :fill, 10, 10, format: 'jpeg', fallback: "no_image.jpg" %><br>
+		<td><%= attachment_image_tag @user, :profile_image_id, :fill, 10, 10, format: 'jpeg', fallback: "no_image.jpg" %><br>
 			<%= @user.name %></td>
 		<td><%= @book.title %></td>
 		<td><%= @book.opinion %></td>
