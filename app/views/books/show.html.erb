@@ -6,7 +6,7 @@
 	<li><%= attachment_image_tag @user, :profile_image_id, :fill, 10, 10, format: 'jpeg', fallback: "no_image.jpg" %><br>
 		<%= @user.name %></li>
 	<li><%= @book.title %></li>
-	<li><%= @book.opinion %></li>
+	<li><%= @book.body %></li>
 	<% if @book.user == current_user %>
 	<li><%= link_to "Edit", edit_book_path(@book.id) %></li>
 	<li><%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %></li>
